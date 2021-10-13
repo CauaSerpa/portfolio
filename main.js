@@ -22,3 +22,19 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+//scroll reveal animation
+const sr = ScrollReveal({
+	origin: 'top',
+	distance: '80px',
+	duretion: 2000,
+	reset: true
+})
+//scroll home
+sr.reveal('.home__title',{})
+sr.reveal('.home__text',{delay: 200})
+//scroll project
+sr.reveal('.project__img',{interval: 200})
+//scroll contact
+sr.reveal('.contact__imput',{interval: 200})
+sr.reveal('.buttom',{delay: 200})
