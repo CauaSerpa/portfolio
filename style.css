@@ -1,0 +1,416 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Variables CSS */
+:root
+{
+	--header-height: 3rem;
+	--font-semi: 600;
+}
+/* Colors */
+:root
+{
+	--first-color: #000;
+	--second-color: #4d4ae4;
+	--third-color: #000015;
+	--fourth-color: #5be7aC;
+}
+/* Fonte */
+:root
+{
+	--body-font: 'Poppins', sans-serif;
+	--big-font-size: 2.5rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px)
+{
+	:root
+	{
+		--big-font-size: 3.5rem;
+		--h2-font-size: 2rem;
+		--normal-font-size: 1rem;
+	}
+}
+/* Margens */
+:root
+{
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+/* z index */
+:root{
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+}
+/* Base */
+*,::before,::after
+{
+	box-sizing: border-box;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	margin: var(--header-heigth) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--first-color);
+}
+h1,h2,p
+{
+	margin: 0;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+img
+{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+/* Class CSS */
+.section-title
+{
+	position: relative;
+	font-size: var(--h2-font-size);
+	color: var(--first-color);
+	margin-top: var(--mb-2);
+	margin-bottom: var(--mb-4);
+	text-align: center;
+}
+.section-title::after
+{
+	position: absolute;
+	content: "";
+	width: 64px;
+	height: 0.18rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 2rem;
+	background-color: var(--second-color);
+}
+.section
+{
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+/* Layout */
+.bd-grid
+{
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
+.l-header
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: #fff;
+	box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+}
+.nav
+{
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: var(--font-semi);
+}
+@media screen and (max-width: 768px)
+{
+	.nav__container
+	{
+		position: fixed;
+		top: var(--header-height);
+		right: -100%;
+		width: 80%;
+		height: 100%;
+		padding: 2rem;
+		background-color: var(--second-color);
+		transition: .5s;
+	}
+
+}
+.nav__item
+{
+	margin-bottom: var(--mb-4);
+}
+.link
+{
+	position: relative;
+	color: #fff;
+}
+.link:hover
+{
+	position: relative;
+}
+.link:hover::after
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0.18rem;
+	left: 0;
+	top: 2rem;
+	background-color: var(--second-color);
+}
+.nav__logo
+{
+	color: var(--first-color);
+}
+.nav__menu
+{
+	color: var(--first-color);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+/* Active menu */
+.active::after
+{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0.18rem;
+	left: 0;
+	top: 2rem;
+	background-color: var(--first-color);
+}
+/* Show menu */
+.show
+{
+	right: 0;
+}
+/* Home */
+.home
+{
+	height: 100vh;
+	row-gap: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--third-color);
+	color: #fff;
+}
+.home__container
+{
+	align-self: center;
+}
+.home__title
+{
+	font-size: var(--big-font-size);
+}
+.home__title-color
+{
+	color: #FB294E /*var(--second-color)*/;
+}
+.home__text-color
+{
+	color: var(--fourth-color);
+}
+.home__seta
+{
+	position: absolute;
+	bottom: 10px;
+	right: calc(100vw - 52vw);
+	display: flex;
+	text-align: center;
+	background-color: var(--third-color);
+}
+.home__seta a
+{
+	color: #fff;
+	font-size: 2rem;
+}
+/* Home */
+.project
+{
+	text-align: center;
+}
+.project__container
+{
+	row-gap: 2rem;
+}
+.project__img
+{
+	box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+	border-radius: .5rem;
+	overflow: hidden;
+}
+.project__img img
+{
+	transition: 1s;
+}
+.project__img img:hover
+{
+	transform: scale(1.1);
+}
+/* Projects */
+.contact__imput
+{
+	width: 100%;
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-semi);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: 3px solid var(--third-color);
+	outline: none;
+	margin-bottom: var(--mb-4);
+}
+textarea
+{
+	resize: vertical;
+}
+.contact__buttom
+{
+	display: block;
+	border: none;
+	outline: none;
+	font-size: var(--normal-font-size);
+	cursor: pointer;
+	margin-left: auto;
+	float: right;
+}
+.buttom
+{
+	display: inline-block;
+	background-color: var(--second-color);
+	color: #fff;
+	padding: .75rem 2.5rem;
+	font-weight: var(--font-semi);
+	border-radius: .5rem;
+}
+.buttom:hover
+{
+	box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+}
+/* Contact */
+.footer
+{
+	background-color: var(--third-color);
+	color: #fff;
+	text-align: center;
+	font-weight: var(--font-semi);
+	padding: 2rem 0;
+}
+.footer__text
+{
+	font-size: 2rem;
+	margin-bottom: var(--mb-4);
+}
+.footer__follow
+{
+	margin-bottom: var(--mb-4);
+}
+.footer__icon
+{
+	font-size: 1.5rem;
+	color: #fff;
+	margin: 0 var(--mb-2);
+}
+/* Footer */
+@media screen and (min-width: 768px)
+{
+	body
+	{
+		margin: 0;
+	}
+	.section
+	{
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+	}
+	.section-title
+	{
+		margin-bottom: var(--mb-6);
+	}
+	.section-title::after
+	{
+		width: 80px;
+		top: 3rem;
+	}
+
+	.nav
+	{
+		height: calc(var(--header-height) + 1rem);
+	}
+	.nav__list
+	{
+		display: flex;
+		padding-top: 0;
+	}
+	.nav__item
+	{
+		margin-left: var(--mb-6);
+		margin-bottom: 0;
+	}
+	.nav__menu
+	{
+		display: none;
+	}
+	.link
+	{
+		color: var(--first-color);
+	}
+	.active::after
+	{
+		background-color: var(--second-color);
+	}
+
+	.home
+	{
+		height: 100vh;
+	}
+	.home__container
+	{
+		position: absolute;
+		left: 10vw;
+	}
+
+	.project__container
+	{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+
+	.contact__form
+	{
+		width: 360px;
+	}
+	.contact__container
+	{
+		justify-items: center;
+	}
+}
+@media screen and (min-width: 1024px)
+{
+	.bd-grid
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
