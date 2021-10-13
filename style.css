@@ -26,7 +26,7 @@
 {
 	:root
 	{
-		--big-font-size: 4rem;
+		--big-font-size: 3.5rem;
 		--h2-font-size: 2rem;
 		--normal-font-size: 1rem;
 	}
@@ -176,7 +176,7 @@ img
 	height: 0.18rem;
 	left: 0;
 	top: 2rem;
-	background-color: var(--second-color);
+	background-color: var(--third-color);
 }
 .nav__logo
 {
@@ -197,7 +197,7 @@ img
 	height: 0.18rem;
 	left: 0;
 	top: 2rem;
-	background-color: var(--first-color);
+	background-color: var(--third-color);
 }
 /* Show menu */
 .show
@@ -226,6 +226,10 @@ img
 .home__title-color
 {
 	color: #FB294E /*var(--second-color)*/;
+}
+.home__text
+{
+	font-size: var(--h2-font-size);
 }
 .home__text-color
 {
@@ -283,6 +287,9 @@ img
 textarea
 {
 	resize: vertical;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-semi);
 }
 .contact__buttom
 {
