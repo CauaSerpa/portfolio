@@ -207,7 +207,7 @@ img
 /* Home */
 .home
 {
-	height: 100vh;
+	height: calc(100vh - 3rem);
 	row-gap: 1rem;
 	display: flex;
 	justify-content: center;
