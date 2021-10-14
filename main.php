@@ -1,9 +1,9 @@
 <?php
-	if (isset($_POST['email']) && empty($_POST['email'])){
+	if (isset($_POST['email']) && !empty($_POST['email'])){
 		// Pegar o (nome, email, menssagem)
 		$name = addslashes($_POST['name']);
 		$email = addslashes($_POST['email']);
-		$message = addslashes($_POST['message']);
+		$mesage = addslashes($_POST['mesage']);
 	}
 
 	//Para quem o contato será enviado e o corpo do email
@@ -11,7 +11,7 @@
 	$subject = "portifolio (novo contato)";
 	$body = "Nome: ".$name. "\r\n".
 			"Email: ".$email. "\r\n".
-			"Menssagem: ".$message;
+			"Menssagem: ".$mesage;
 	$header = "From:cauaserpa092@gmail.com"."\r\n".
 				"Reply-To:".$email."\r\n".
 				"X=Mailer:PHP/".phpversion();
