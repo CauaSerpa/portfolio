@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/adb51d3003.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<title>Cauã Serpa</title>
@@ -78,10 +79,10 @@
 		<h2 class="section-title">Contato</h2>
 
 		<div class="contact__container bd-grid">
-			<form class="contact__form">
-				<input type="text" placeholder="Nome" class="contact__imput" required>
-				<input type="email" placeholder="Email" class="contact__imput" required>
-				<textarea name="" id="" cols="0" rows="10" class="contact__imput" placeholder="O que você deseja?" required></textarea>
+			<form class="contact__form" method="POST" action="main.php">
+				<input type="text" placeholder="Nome" class="contact__imput" name="name" required>
+				<input type="email" placeholder="Email" class="contact__imput" name="email" required>
+				<textarea name="" id="" cols="0" rows="10" class="contact__imput" placeholder="O que você deseja?" name="message" required></textarea>
 
 				<input type="submit" value="Enviar" class="contact__buttom buttom">
 			</form>
