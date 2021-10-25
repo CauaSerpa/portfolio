@@ -278,6 +278,7 @@ img
 	width: 100%;
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-semi);
+	font-family: var(--body-font);
 	padding: 1rem;
 	border-radius: .5rem;
 	border: 3px solid var(--third-color);
