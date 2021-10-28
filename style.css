@@ -235,6 +235,10 @@ img
 {
 	color: var(--fourth-color);
 }
+.home__img
+{
+	max-width: 500px;
+}
 .home__seta
 {
 	position: absolute;
