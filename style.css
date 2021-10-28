@@ -246,7 +246,6 @@ img
 	right: calc(100vw - 52vw);
 	display: flex;
 	text-align: center;
-	background-color: var(--third-color);
 }
 .home__seta a
 {
