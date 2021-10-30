@@ -77,17 +77,24 @@
 	</section>
 
 	<section class="contact section" id="contact">
-		<h2 class="section-title">Contacto</h2>
+		<h2 class="section-title">Contato</h2>
 
-		<div class="contact__container bd-grid">
-			<form class="contact__form" method="POST" action="./main.php">
-				<input type="text" placeholder="Nombre" class="contact__imput" name="name" required>
+		<div class="contact__container bd-grid" id="blur">
+			<form class="contact__form" method="POST">
+				<input type="text" placeholder="Nome" class="contact__imput" name="name" required>
 				<input type="email" placeholder="Email" class="contact__imput" name="email" required>
-				<textarea cols="0" rows="10" class="contact__imput" placeholder="¿Que deseas?" name="mesage" required></textarea>
+				<textarea cols="0" rows="10" class="contact__imput" placeholder="O que você deseja?" name="mesage" required></textarea>
 
-				<input type="submit" value="Enviar" class="contact__buttom buttom">
+				<a href="#contact" class="contact__buttom buttom" onclick="toggle()">Enviar</a>
+				
 			</form>
 		</div>
+		<div class="popup" id="popup">
+				<i class="fa fa-frown-o" aria-hidden="true"></i>
+				<h2>Ops! Algo deu errado.</h2>
+				<p>Não foi possivel enviar o seu formulário de contato.<br>Tente novamente mais tarde!</p>
+				<a href="#contact" class="popup__buttom" onclick="toggle()">Fechar</a>
+			</div>
 	</section>
 
 	<footer class="footer">
