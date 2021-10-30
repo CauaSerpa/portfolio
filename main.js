@@ -23,6 +23,15 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+//pop-up
+function toggle(){
+	var blur = document.getElementById('blur');
+	blur.classList.toggle('active-popup');
+
+	var popup = document.getElementById('popup');
+	popup.classList.toggle('active-popup');
+}
+
 //scroll reveal animation
 const sr = ScrollReveal({
 	origin: 'top',
