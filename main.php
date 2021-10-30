@@ -1,4 +1,4 @@
-<?php
+<?php/*
 	if (isset($_POST['email']) && !empty($_POST['email'])){
 		// Pegar o (nome, email, menssagem)
 		$name = addslashes($_POST['name']);
@@ -25,6 +25,6 @@
 		echo ("O email não pode ser enviado.");
 
 	}
-
+*/
 
 ?>
