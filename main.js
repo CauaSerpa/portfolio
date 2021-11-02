@@ -42,6 +42,7 @@ const sr = ScrollReveal({
 //scroll home
 sr.reveal('.home__title',{})
 sr.reveal('.home__text',{delay: 200})
+sr.reveal('.img__disquete',{delay: 400})
 //scroll project
 sr.reveal('.project__img',{interval: 200})
 //scroll contact
