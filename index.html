@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Codificação caracteres da página -->
     <meta charset="UTF-8">
+
+    <!-- SEO Geral -->
+    <title>Cauã Serpa</title>
+    <meta name="description" content="Meu nome é Cauã Serpa, sou desenvolvedor Full Stack há 2 anos. Programo nas linguagens, PHP e JavaScript.">
+    <link rel="canonical" href="https://cauaserpa.github.io/portfolio/">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Google+ / Schema.org -->
+    
+    <!-- Open Graph Facebook -->
+    <meta property="og:title" content="Cauã Serpa">
+    <meta property="og:description" content="Meu nome é Cauã Serpa, sou desenvolvedor Full Stack há 2 anos. Programo nas linguagens, PHP e JavaScript.">
+    <meta property="og:url" content="https://cauaserpa.github.io/portfolio/">
+    <meta property="og:site_name" content="Cauã Serpa">
+    <meta property="og:type" content="website">
+
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cauã Serpa</title>
+    
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <!--Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-light 1.png" type="image/x-icon">
     <!--Box Icons-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-234958039-1">
 	</script>
 	<script>
@@ -56,6 +75,45 @@
             </div>
         </nav>
     </header>
+
+    <!-- <div class="container">
+        <div class="modal-container" id="modal-container">
+            <modal class="modal">
+                <button class="close-btn" id="close"><i class='bx bx-x'></i></button>
+                <div class="modal-content">
+                    <div class="header">
+                        <h2 class="logo">Lorem Ipsum</h2>
+                        <p class="tagline">Somethings big is coming.</p>
+                        <p>Se inscreva em minha Newsletter para receber um orçamento grátis!</p>
+                    </div>
+                    <form action="php/newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Coloque o seu email para se cadastrar em nossa newsletter!">
+                        <button type="submit" class="subscribe">Enviar</button>
+                    </form>
+                </div>
+            </modal>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="modal-container" id="modal-container">
+            <div class="modal" id="modal">
+                <button class="close-btn" id="close"><i class='bx bx-x'></i></button>
+                <div class="modal-content">
+                    <div class="header">
+                        <img class="logo" src="img/logo.png" alt="">
+                        <p class="tagline">Esta pensando em algo incrivel?</p>
+                        <p>Se inscreva em minha Newsletter para receber um orçamento grátis!</p>
+                    </div>
+                    <form action="php/newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Coloque o seu telefone para se cadastrar na minha newsletter!">
+                        <button type="submit" class="subscribe">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main class="l-main">
         <!--Home-->
         <section class="home" id="inicio">
@@ -178,7 +236,7 @@
                     <div class="img"></div>
                     <div class="hover">
                         <span class="project text">Lista de Tarefas</span>
-                        <a class="view__project"  href="https://cauaserpa.github.io/lista-de-tarefas/">
+                        <a class="view__project"  href="https://cauaserpa.github.io/encurtador-de-url/">
                             <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
                         </a>
                     </div>
@@ -290,6 +348,7 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
