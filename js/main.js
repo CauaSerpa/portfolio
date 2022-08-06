@@ -81,7 +81,7 @@ window.addEventListener("scroll", () => {
 });
 
 //PopUp
-$(document).ready(function(){
+/*$(document).ready(function(){
     function showModal(){
         $('#modal-container').show();
         $('html body').css('overflow','hidden');
@@ -97,7 +97,7 @@ $(document).ready(function(){
     $('#close').click(function(){
         closeModal();
     })
-});
+});*/
 
 //Canvas
 var canvas = document.getElementById('nokey'),
