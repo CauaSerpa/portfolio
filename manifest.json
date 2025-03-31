@@ -5,6 +5,7 @@
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#000000",
+    "description": "App PWA para portfólio - Cauã Serpa",
     "icons": [
       {
         "src": "img/logo.png",
