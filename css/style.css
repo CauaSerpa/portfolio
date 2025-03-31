@@ -735,7 +735,11 @@ section.home
 }
 .item-3 .img
 {
+<<<<<<< HEAD
     background-image: url(../img/project-10.jpg);
+=======
+    background-image: url(../img/project-9.jpg);
+>>>>>>> 018eb1c (Adiciona Worker para PWA.)
 }
 .item-4 .img
 {
@@ -1185,4 +1189,8 @@ footer.footer
 		margin-left: auto;
 		margin-right: auto;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 018eb1c (Adiciona Worker para PWA.)
