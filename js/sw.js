@@ -1,10 +1,10 @@
 const CACHE_NAME = 'portfolio-cache-v1';
 const urlsToCache = [
-    '/portifolio/',
-    '/portifolio/index.html',
-    '/portifolio/css/style.css',
-    '/portifolio/js/main.js',
-    '/portifolio/img/logo.png'
+    '/portfolio/',
+    '/portfolio/index.html',
+    '/portfolio/css/style.css',
+    '/portfolio/js/main.js',
+    '/portfolio/img/logo.png'
 ];
 
 self.addEventListener('install', event => {
