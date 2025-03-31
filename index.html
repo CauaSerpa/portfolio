@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Codificação caracteres da página -->
+    <meta charset="UTF-8">
+
+    <!-- SEO Geral -->
+    <title>Cauã Serpa</title>
+    <meta name="description" content="Meu nome é Cauã Serpa, sou desenvolvedor Full Stack há 2 anos. Programo nas linguagens, PHP e JavaScript.">
+    <link rel="canonical" href="https://cauaserpa.github.io/portfolio/">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Google+ / Schema.org -->
+    
+    <!-- Open Graph Facebook -->
+    <meta property="og:title" content="Cauã Serpa">
+    <meta property="og:description" content="Meu nome é Cauã Serpa, sou desenvolvedor Full Stack há 2 anos. Programo nas linguagens, PHP e JavaScript.">
+    <meta property="og:url" content="https://cauaserpa.github.io/portfolio/">
+    <meta property="og:site_name" content="Cauã Serpa">
+    <meta property="og:type" content="website">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/logo-light 1.png" type="image/x-icon">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-234958039-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-234958039-1');
+	</script>
+</head>
+<body>
+    <header class="l-header">
+		<nav class="nav bd-grid">
+            <a href="#" class="nav__logo">
+                <img class="logo" src="img/logo.png" alt="">
+            </a>
+            <div class="nav__menu">
+                <div class="mobile-menu" id="nav-toggle">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </div>
+            <div class="nav__container" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="link active">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre" class="link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#serviços" class="link">Serviços</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="link">Portfólio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contato" class="link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="container">
+        <div class="modal-container" id="modal-container">
+            <modal class="modal">
+                <button class="close-btn" id="close"><i class='bx bx-x'></i></button>
+                <div class="modal-content">
+                    <div class="header">
+                        <h2 class="logo">Lorem Ipsum</h2>
+                        <p class="tagline">Somethings big is coming.</p>
+                        <p>Se inscreva em minha Newsletter para receber um orçamento grátis!</p>
+                    </div>
+                    <form action="php/newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Coloque o seu email para se cadastrar em nossa newsletter!">
+                        <button type="submit" class="subscribe">Enviar</button>
+                    </form>
+                </div>
+            </modal>
+        </div>
+    </div> -->
+
+    <!--<div class="container">
+        <div class="modal-container" id="modal-container">
+            <div class="modal" id="modal">
+                <button class="close-btn" id="close"><i class='bx bx-x'></i></button>
+                <div class="modal-content">
+                    <div class="header">
+                        <img class="logo" src="img/logo.png" alt="">
+                        <p class="tagline">Esta pensando em algo incrivel?</p>
+                        <p>Se inscreva em minha Newsletter para receber um orçamento grátis!</p>
+                    </div>
+                    <form action="php/newsletter.php" method="post">
+                        <input type="email" name="email" id="email" placeholder="Coloque o seu telefone para se cadastrar na minha newsletter!">
+                        <button type="submit" class="subscribe">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <main class="l-main">
+        <!--Home-->
+        <section class="home" id="inicio">
+            <canvas id="nokey" width="800" height="800"></canvas>
+            <div class="home__container">
+                <p class="text">Olá, Meu nome é</p>
+                <h2>Cauã Serpa</h2>
+                <div class="line"></div>
+                <p class="text">Sou desenvolvedor Full Stack</p>
+                <div class="button">
+                    <a href="./img/Currículo - Cauã Serpa.pdf" class="btn" download>
+                        Baixar CV
+                    </a>
+                </div>
+            </div>
+            <a class="sroll-down" href="#sobre"></a>
+        </section>
+    
+        <!--About-->
+        <section class="about section" id="sobre">
+            <h2 class="title">Sobre</h2>
+            <div class="about__container">
+                <div class="about__img container">
+                    <img src="img/me.png" alt="">
+                </div>
+                <div class="about__text container">
+                    <div class="line"></div>
+                    <h2>Cauã Serpa</h2>
+                    <p class="text">
+                        Meu nome é Cauã Serpa, sou desenvolvedor<br>
+                        Full Stack há 2 anos.<br>
+                        Programo nas linguagens, PHP e JavaScript.<br><br>
+                        Sou focado em tirar os planos dos<br>
+                        meus clientes do papel, da melhor forma possível.<br><br>
+                        <a href="#contato">Vamos criar algo incrível</a>
+                    </p><br><br>
+                    <div class="follow__container">
+                        <p class="text">Me siga em:</p>
+                        <div class="follow">
+                            <a href="https://www.instagram.com/cauaserpa/" class="instagram" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                            </a>
+                            <a href="#" class="youtube" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                            </a>
+                            <a href="https://github.com/CauaSerpa" class="github" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/caua-serpa/" class="linkedin" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--Services-->
+        <section class="services section" id="serviços">
+            <h2 class="title">Serviços</h2>
+            <div class="box__container bd-grid">
+                <div class="box">
+                    <img src="./img/design.png">
+                    <p class="title">Design</p>
+                    <p class="text">Criação do protótipo do 
+                        leyout para o site, com 
+                        base no desejo do cliente.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./img/code.png">
+                    <p class="title">Programação</p>
+                    <p class="text">Programação do site 
+                        com base no leyout 
+                        criado anteriormente.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./img/seo.png">
+                    <p class="title">SEO</p>
+                    <p class="text">Uso de técnicas de SEO 
+                        para atingir o maior 
+                        número de clientes.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./img/launch.png">
+                    <p class="title">Lançamento</p>
+                    <p class="text">Lançamento do site pronto 
+                        e otimizado para todos os 
+                        navegadores mais utilizados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <!--Portfólio-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="title">Portfólio</h2>
+            <div class="grid-container">
+                <div class="item-1 content">
+                    <div class="img"></div>
+                    <div class="hover">
+                        <span class="project text">SoftHash</span>
+                        <a class="view__project"  href="https://softhash.com.br" target="_blank">
+                            <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-2 content">
+                    <div class="img"></div>
+                    <div class="hover">
+                        <span class="project text">God of War</span>
+                        <a class="view__project"  href="https://cauaserpa.github.io/landing-page/" target="_blank">
+                            <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-3 content">
+                    <div class="img"></div>
+                    <div class="hover">
+                        <span class="project text">3D Landing Page</span>
+                        <a class="view__project"  href="https://cauaserpa.github.io/3d-website/" target="_blank">
+                            <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-4 content">
+                    <div class="img"></div>
+                    <div class="hover">
+                        <span class="project text">Parallax</span>
+                        <a class="view__project"  href="https://cauaserpa.github.io/parallax/" target="_blank">
+                            <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-5 content">
+                    <div class="img"></div>
+                    <div class="hover">
+                        <span class="project text">Habilide</span>
+                        <a class="view__project"  href="https://habilide.com.br" target="_blank">
+                            <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-6 content">
+                    <div class="img"></div>
+                    <div class="hover">
+                        <span class="project text">Jogo da Velha</span>
+                        <a class="view__project"  href="https://cauaserpa.github.io/jogo-da-velha/" target="_blank">
+                            <span class="text">Abrir</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5 5h5V3H3v7h2zm5 14H5v-5H3v7h7zm11-5h-2v5h-5v2h7zm-2-4h2V3h-7v2h5z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Criar botao para ver projetos back-end (Github)-->
+        </section>
+    
+        <!--Contact-->
+        <section class="contact section" id="contato">
+            <h5 class="text">PRECISANDO DE UM PROGRAMADOR?</h5>
+            <span class="contact__title">
+                <a class="title" href="https://api.whatsapp.com/send?phone=5521972775758">
+                    Vamos trabalhar juntos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                </a>
+            </span>
+        </section>
+    </main>
+
+    <a href="#" class="to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+    </a>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__title">
+            <img src="./img/logo.png" alt="">
+            <h2 class="title">Cauã Serpa</h2>
+        </div>
+        <div class="footer__container">
+            <div class="social__media container">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/cauaserpa/" target="_blank">
+                            Instagram
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            YouTube
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/CauaSerpa" target="_blank">
+                            GitHub
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/caua-serpa/" target="_blank">
+                            Linkedin
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="height-line container"></div>
+            <div class="links container">
+                <ul>
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#serviços">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfólio</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="footer__active">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="text"><span class="color">&#169; 2022 copyright,</span> todos os direitos reservados!</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
