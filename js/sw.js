@@ -1,6 +1,6 @@
 const CACHE_NAME = 'portfolio-cache-v1';
 const urlsToCache = [
-    '/portfolio/',
+    '/portfolio/', // Corrigindo o caminho raiz
     '/portfolio/index.html',
     '/portfolio/css/style.css',
     '/portfolio/js/main.js',
@@ -10,7 +10,11 @@ const urlsToCache = [
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => cache.addAll(urlsToCache))
+            .then(cache => {
+                return cache.addAll(urlsToCache).catch(error => {
+                    console.error('Erro ao adicionar arquivos ao cache:', error);
+                });
+            })
     );
 });
 
